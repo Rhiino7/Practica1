@@ -10,12 +10,14 @@ package practica1.ejercicio2;
  * @author ESTUDIANTE
  */
 public class ConjuntoLibros {
-    int n = 0;
-    private Libro[] conjunto = new Libro[n];
+    private Libro[] libros[]; 
     
+    public ConjuntoLibros(){
+        this.libros = new Libro[10];
+    }
     
     public boolean creaLibro(String titulo, String autor, int paginas, int calificacion){
-        
+        return true;
     }
     
     public boolean eliminarLibroTitulo(String titulo){
@@ -28,8 +30,8 @@ public class ConjuntoLibros {
     
     public Libro[] listarLibros(){
         for(int i=0;i<n;i++){
-            System.out.println(+ i+1 +". "+conjunto[i].getTitulo());
+            System.out.println(+ i+1 +". "+libros[i].getTitulo());
         }
-        return conjunto;
+        return libros;
     }
 }
